@@ -1,7 +1,7 @@
-QUBO-Chimera
+HFS-algorithm
 ============
 
-The core of this repository was developed by Alex Selby and is available [here](https://github.com/alex1770/QUBO-Chimera).  This repository focus on the algorithmic code and includes a containerized version of the code for testing on non-linux platforms.
+The core of this repository was developed by Alex Selby.  The original source code is available [here](https://github.com/alex1770/QUBO-Chimera).  In contrast to the original, this repository focuses on the algorithmic code and includes a containerized version of the software for testing on non-linux platforms.
 
 
 # Installation
@@ -65,11 +65,11 @@ An ACSII illustration of a C_4 chimera graph,
 
 The code container can be tested with,
 ```
-qubo -m0 -n500 -t 3
+qubo -m0 -n500 -t 1
 ```
 and data file reading can be tested with,
 ```
-qubo -m0 -t 3 data/001.hfs
+qubo -m0 -t 1 data/001.hfs
 ```
 
 
@@ -82,11 +82,11 @@ The docker container can be built with, `build.sh`.
 
 The container can be tested with,
 ```
-docker run hfs_alg -m0 -n500 -t 3
+docker run hfs_alg -m0 -n500 -t 1
 ```
 and data file reading can be tested with,
 ```
-docker run -v $(pwd)/test/data:/data hfs_alg  -m0 -t 3 data/001.hfs
+docker run -v $(pwd)/test/data:/data hfs_alg  -m0 -t 1 data/001.hfs
 ```
 
 
