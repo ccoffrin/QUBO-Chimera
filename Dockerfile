@@ -1,6 +1,6 @@
 # not compatible with latest gcc
 #FROM gcc:latest
-FROM gcc:5
+FROM gcc:6
 
 COPY Makefile qubo.c normal.c /
 
