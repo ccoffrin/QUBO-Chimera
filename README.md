@@ -31,6 +31,36 @@ where `<chimera vertex>` is specified by four numbers using the format described
 comments at the start of `qubo.c`.
 
 
+An ACSII illustration of a C_4 chimera graph,
+```
+            *         *         *         *
+           /|        /|        /|        /|
+          / |       / |       / |       / |
+         *--|------*--|------*--|------*  |
+            |         |         |         |
+            |         |         |         |
+            *         *         *         *
+           /|        /|        /|        /|
+          / |       / |       / |       / |
+         *--|------*--|------*--|------*  |
+            |         |         |         |
+            |         |         |         |
+            *         *         *         *
+           /|        /|        /|        /|
+          / |       / |       / |       / |
+         *--|------*--|------*--|------*  |
+            |         |         |         |
+            |         |         |         |
+            *         *         *         *
+           /         /         /         / 
+          /         /         /         /  
+         *---------*---------*---------*
+```
+* The * represents 4 vertices
+* The / represents K_4,4 (16 edges; all vertices connected to all others)
+* The | and - represent 4 parallel lines (4 edges; each vertex connected to its corresponding one)
+
+
 # Testing
 
 The code container can be tested with,
