@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t coursera_do_grader .
+docker build -t hfs_alg .

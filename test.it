@@ -1,0 +1,8 @@
+#!/bin/bash
+
+docker run hfs_alg -m0 -n100 -t 1
+docker run hfs_alg -m0 -n250 -t 1
+docker run hfs_alg -m0 -n500 -t 1
+docker run -v $(pwd)/test/data:/data hfs_alg  -m0 -t 1 data/001.hfs
+docker run -v $(pwd)/test/data:/data hfs_alg  -m0 -t 1 data/002.hfs
+docker run -v $(pwd)/test/data:/data hfs_alg  -m0 -t 1 data/003.hfs
